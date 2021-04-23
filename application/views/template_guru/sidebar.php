@@ -19,7 +19,7 @@
                     <div class="collapse in" id="collapseExample">
                         <ul class="nav">
                             <li>
-                                <a href="" onclick="event.preventDefault();
+                                <a href="<?php echo base_url('Admin') ?>" onclick="event.preventDefault();
                                               document.getElementById('logout-form').submit();">
                                     <span class="link-collapse">Logout</span>
                                 </a>
@@ -127,7 +127,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="" onclick="event.preventDefault();
+                    <a href="<?= base_url('Admin')?>" onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
                         <i class="fas fa-sign-out-alt"></i>
                         <span class="link-collapse">Logout</span>
