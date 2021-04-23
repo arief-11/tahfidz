@@ -10,7 +10,7 @@
                 <div class="info">
                     <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
                         <span>
-                            Muhammad Agni Setiawan
+                            Muhammad Agni Rosadi
                             <span style="text-transform: capitalize;" class="user-level">Dashboard Guru</span>
                             <span class="caret"></span>
                         </span>
@@ -19,7 +19,7 @@
                     <div class="collapse in" id="collapseExample">
                         <ul class="nav">
                             <li>
-                                <a href="<?php echo base_url('Admin') ?>" onclick="event.preventDefault();
+                                <a href="<?= base_url('user')?>" onclick="event.preventDefault();
                                               document.getElementById('logout-form').submit();">
                                     <span class="link-collapse">Logout</span>
                                 </a>
@@ -60,7 +60,12 @@
                     </div>
                 </li>
 
-                
+                <li class="nav-section">
+                    <span class="sidebar-mini-icon">
+                        <i class="fa fa-ellipsis-h"></i>
+                    </span>
+                    <h4 class="text-section">Menu</h4>
+                </li>
 
                 <li class="nav-item  ">
                     <a data-toggle="collapse" href="#arts">
@@ -73,7 +78,7 @@
 
                             <li class="">
                                 <a href="">
-                                    <span class="sub-item">Tahfidz</span>
+                                    <span class="sub-item">Manage Data Siswa</span>
                                 </a>
                             </li>
                           
@@ -84,7 +89,7 @@
                 <li class="nav-item  ">
                     <a data-toggle="collapse" href="#messages-app-nav">
                         <i class="far fa-paper-plane"></i>
-                        <p>Tahfidz</p>
+                        <p>Kelompok</p>
                         <span class="caret"></span>
                     </a>
                     <div class="collapse " id="messages-app-nav">
@@ -92,33 +97,32 @@
 
                             <li class="">
                                 <a href="">
-                                    <span class="sub-item">Input Presensi</span>
-                                </a>
-                            </li>
-
-                            <li class="">
-                                <a href="">
-                                    <span class="sub-item">Laporan Presensi</span>
-                                </a>
-                            </li>
-                          
-                            <li class="">
-                                <a href="">
-                                    <span class="sub-item">Setoran Siswa</span>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="">
-                                    <span class="sub-item">Quiz Hafalan</span>
+                                    <span class="sub-item">Manage Data KelompokU</span>
                                 </a>
                             </li>
                             
                         </ul>
                     </div>
                 </li>
+                
+                <li class="nav-item  ">
+                    <a data-toggle="collapse" href="#ustadzah">
+                        <i class="far fa-paper-plane"></i>
+                        <p>Ustadzah</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse " id="ustadzah">
+                        <ul class="nav nav-collapse">
 
-
-     
+                            <li class="">
+                                <a href="">
+                                    <span class="sub-item">Manage Data Ustadzah</span>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </li>
                 <li class="nav-item   ">
                     <a href="">
                         <i class="fas fa-user-circle"></i>
@@ -127,7 +131,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="<?= base_url('Admin')?>" onclick="event.preventDefault();
+                    <a href="<?= base_url('User');?>" onclick="event.preventDefault();
                                   document.getElementById('logout-form').submit();">
                         <i class="fas fa-sign-out-alt"></i>
                         <span class="link-collapse">Logout</span>
